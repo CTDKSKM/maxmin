@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대최소구하는 함수</title>
+
+</head>
+
+<body>
+    <p>F12 - 콘솔창에서 확인</p>
+    <script>
+        function min(array) {
+            let output = array[0]
+            for (const item of array) {
+                if (output > item) {
+                    output = item
+                }
+            } return output
+        }
+        const testArray = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray}중에서`)
+        console.log(`최솟값 = ${min(testArray)}`)
+
+        function max(array) {
+            let output = array[0]
+            for (const item of array) {
+                if (output < item) {
+                    output = item
+                }
+            } return output
+        }
+        console.log(`${testArray}중에서`)
+        console.log(`최댓값 = ${max(testArray)}`)
+    </script>
+</body>
+
+</html>
